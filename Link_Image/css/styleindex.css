@@ -1,0 +1,19 @@
+.boxlink:link {
+	color: red;
+	text-decoration: none;
+}
+.boxlink:visited{
+	color: gray;
+}
+.boxlink:hover {
+	color: green;
+}
+
+.boxlink:active {
+	color:blue;
+}
+.boximg{
+	max-width: 300px;
+	/*border: 1px solid #f20;*/
+}
+
