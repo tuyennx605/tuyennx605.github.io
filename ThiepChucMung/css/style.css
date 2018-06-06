@@ -1,0 +1,139 @@
+body{
+	/*background-color:#f20;*/
+	background-image: url("../img/bg.jpg");
+}
+
+.wraper{
+	max-width: 1280px;
+	margin: auto;
+}
+
+.content{
+	overflow hidden;
+	width: 100%;
+	position:relative;
+}
+.content_bg{
+	width:100%;
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.disk{
+	width:10%;
+	position: absolute;
+	top:10px;
+	left:5px;
+	animation: rotate 5s cubic-bezier(0.35, 0.32, 0.76, 0.81) infinite;
+}
+
+@keyframes anim_happy_teachers{
+	0%{transform:skewX(0);}
+	30%{transform:skewX(20deg);}
+	60%{transform:skewX(-20deg);}
+	100%{transform:skewX(0);}
+}
+
+.happy_teachers{
+	display: inline;
+	position: absolute;
+	top: 13%;
+	left: 25%;
+	font-weight:bold;
+	font-size: 52px;
+	color: #CDDC39;
+	animation:anim_happy_teachers 4s cubic-bezier(0.35, 0.32, 0.76, 0.81) infinite;
+}
+
+@keyframes anim_datehappy{
+	0%{transform:rotateY(0);}
+	50%{transform:rotateY(360deg);}
+	100%{transform:rotate(0);}
+}
+
+.date_happy{
+	position: absolute;
+	top: 24%;
+	left: 42%;
+	font-weight:bold;
+	font-size: 60px;
+	color: #64DD17;
+	animation:anim_datehappy 5s cubic-bezier(0.35, 0.32, 0.76, 0.81) infinite;
+}
+
+@keyframes anim_zoomheart{
+	0%{transform:scale(1, 1); opacity: 0.8}
+	50%{transform:scale(2, 2); opacity: 0.2}
+	100%{transform: scale(1, 1); opacity: 0.8}
+}
+.heart{
+	position:absolute;
+	top: 45%;
+	left: 35%;
+	width: 20%;
+	animation:anim_zoomheart 5s cubic-bezier(0.35, 0.32, 0.76, 0.81) infinite;;
+}
+
+/*teacher*/
+.teachers{
+	position: absolute;
+	top: 45%;
+	max-width: 15%;
+	min-width: 12%;
+}
+
+.thaycuong{
+	left: 33%;
+}
+.thayhuy{
+	top: 46%;
+	left: 45%;
+}
+
+@keyframes anim_baybong{
+	0%{opacity: 0.7;}
+	50%{ transform: translateY(-130%); opacity: 0}
+	100%{ opacity: 0}
+}
+
+/*//bong bay*/
+.bongbay{
+	position: absolute;
+	opacity: 0;
+	max-width: 15%;
+}
+
+.bongbay0{
+	top: 55%;
+	left: 10%;
+	animation:anim_baybong 6s 3s cubic-bezier(0.35, 0.32, 0.76, 0.81) infinite;;
+}
+.bongbay1{
+	top: 45%;
+	left: 20%;
+	animation:anim_baybong 6s 0s cubic-bezier(0.35, 0.32, 0.76, 0.81) infinite;;
+}
+.bongbay2{
+	top: 45%;
+	left: 40%;
+	animation:anim_baybong 8s 1s cubic-bezier(0.35, 0.32, 0.76, 0.81) infinite;;
+
+}
+.bongbay3{
+	top: 45%;
+	left: 60%;
+	animation:anim_baybong 7s 2s cubic-bezier(0.35, 0.32, 0.76, 0.81) infinite;;
+}
+.bongbay4{
+	top: 50%;
+	left: 75%;
+	animation:anim_baybong 6s 4s cubic-bezier(0.35, 0.32, 0.76, 0.81) infinite;;
+
+}
