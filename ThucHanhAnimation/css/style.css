@@ -17,6 +17,10 @@
     100% {background-color: #218C8D; color: #F9E559;}
 }
 
+.clear{
+	clear: both;
+}
+
 /*content*/
 
 .swapercontent{
@@ -46,8 +50,7 @@
 }
 
 .item_img1 img:hover{
-	transform:scale(1.2, 1.2);
-
+	transform:scale(1.2);
 }
 
 .item_img2 img:hover{
