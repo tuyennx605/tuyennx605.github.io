@@ -7,6 +7,13 @@
 	margin: auto;
 }
 
+#banner{
+	width:100%;
+}
+#banner img{
+	width: 100%;
+}
+
 #menu{
 	background: #FF9800;
 	width: 100%;
