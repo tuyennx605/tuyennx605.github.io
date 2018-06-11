@@ -1,0 +1,71 @@
+
+.menu img{
+	float: left;
+	height: 90%;
+	margin-left:3%;
+}
+
+.main-menu{
+	height: 100%;
+	float:right;
+	margin-right:50px;
+}
+
+.main-menu li{
+	height: 100%;
+	float:left;
+	list-style-type: none;	/*//xoa cham*/
+	position: relative;
+}
+
+.main-menu li:hover{
+	background-color:#E65100;
+}
+
+.main-menu li a{
+	height: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 32px 28px;
+	display: block;
+	font-weight:bold;
+	text-decoration: none;	/*xóa gạch chân link*/
+}
+
+.icon-home{
+	
+}
+
+/*//sub*/
+
+.sub-menu{
+	position: absolute;
+	top:0%;
+	right: 100%;
+	background-color:#FFB74D;
+	width: 200px;
+	display: none;
+	z-index: 1;
+}
+
+.main-menu > li > .sub-menu{
+	position: absolute;
+	top:100%;
+	right: 0%;
+	background-color:#FFB74D;
+	width: 200px;
+}
+
+.sub-menu li{
+	float: none;
+	border-bottom: 1px solid #fff;
+	padding: 0px 0px;
+}
+
+.main-menu > li:hover > .sub-menu{
+	display: block;
+}
+
+.sub-menu > li:hover > .sub-menu{
+	display: block;
+}
