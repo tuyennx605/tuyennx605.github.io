@@ -23,7 +23,7 @@ function shuffle(array) {
 function flip(card){
 	$(card).toggleClass('flipped');
 	
-	var tam = $(card).find(".mat_sau")[0].style.transform = "rotateY(0deg)";
+	$(card).find(".mat_sau")[0].style.transform = "rotateY(0deg)";
 	$(card).find(".mat_truoc")[0].style.transform = "rotateY(180deg)";
 	console.log(tam);
 
