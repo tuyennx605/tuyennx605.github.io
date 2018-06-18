@@ -49,7 +49,7 @@ body{
 	width: 100%;
 	height: 100%;
 	transition: all 0.5s;
-	/*padding: 30px;*/
+	padding: 20px;
 }
 
 .mat_truoc img{
@@ -58,7 +58,7 @@ body{
 }
 
 .mat_sau{
-	padding: 30px;
+	padding: 20px;
 	transform: rotateY(180deg);
 	width: 100%;
 	height: 100%;
