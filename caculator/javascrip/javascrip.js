@@ -327,19 +327,32 @@ function onClickPhay(){
 
 function onClickChiaDu(){
 	rs = false;
-	
 	if(changeKqsau==false)
 	{
-		changeKqsau = true;
-		kq = kq + " %";
+		console.log(" "+ kqtrc);
+		if(Number(kqtrc)<0)
+		{
+			console.log("kq am!!!");
+			return;
+		}
+		kqtrc = Number(kqtrc)/100;
+		kq = kqtrc;
+		rs = true;
 	}
 	else
 	{
-		onClickBang()
-		kq = kq + " %";
+		console.log(" "+ kqsau);
+		if(Number(kqsau)<0)
+		{
+			console.log("kq am!!!");
+			return;
+		}
+		kqsau = Number(kqsau)/100;
+		kq = returnkq();
+		rs = false;
 	}
+
 	setValueInput();
-	typeDau = 5;
 }
 
 function onClickSQRT(){

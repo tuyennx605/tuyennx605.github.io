@@ -81,3 +81,7 @@ body{
 .btn:active{
 	background-color: #FFA726;
 }
+
+.opa{
+	opacity: 0;
+}
