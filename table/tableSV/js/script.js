@@ -52,7 +52,7 @@ $(function(){
 		$('.title td').removeClass('sort-giam');
 		$('.title td').removeClass('sort-tang');
 	}
-
+	rs();
 
 
 	$('#name').click(function(){
