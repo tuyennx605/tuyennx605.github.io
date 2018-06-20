@@ -56,6 +56,16 @@ $('#register').on('submit', function(){		// lang nghe su kien submit
 		$('#email').next('span').text("");
 	}
 
+	if($('#pwd').val().trim()=='')
+	{
+		$('#pwd').next('span').text("pass is empty");
+		check = false;
+	}
+	else
+	{
+		$('#pwd').next('span').text("");
+	}
+
 
 	return check;
 
