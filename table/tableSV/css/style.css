@@ -1,0 +1,66 @@
+html{
+	width: 100%;
+}
+body{
+	width: 100%;
+}
+
+.wraper{
+	width: 90%;
+	/*background-color: #f20;*/
+	margin:auto;
+	text-align: center;
+}
+table{
+	width: 100%;
+}
+
+table, th, td{
+	border:1px solid gray;
+	border-collapse:collapse;
+	padding: 10px;
+}
+
+.title{
+	background-color: #D7CCC8;
+}
+
+.title>td{
+	font-weight: bold;
+}
+
+
+
+.img1{
+	width: 10%;
+}
+
+img{
+	width: 60%;
+}
+
+.hoten{
+	width: 30%;
+}
+
+.gioitinh{
+	width: 13%;
+}
+
+.email{
+	width: 30%;
+}
+#tabl tr:hover{
+	background-color: #CFD8DC;
+}
+.hit:hover{
+	background-color: #A1887F;
+}
+
+.sort-tang{
+	background: url(../img/up.png) no-repeat 97% #D7CCC8;
+}
+
+.sort-giam{
+	background: url(../img/dow.png) no-repeat 97% #D7CCC8;
+}
