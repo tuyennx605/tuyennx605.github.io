@@ -9,18 +9,13 @@
 	margin-bottom: 3px;
 }
 #themcv{
-	width: 75%;
+	width: 100%;
 	border: 1px solid blue;
 	margin-bottom: 20px;
-	border-radius: 5px;
+	border-radius: 2px;
+	padding:3px;
 }
 
-#addcv{
-	width: 22%;
-	height: 50px;
-	background-color: #ff00bf;
-	border-radius: 5px;
-}
 
 .list-group-item{
 	position: relative;
@@ -40,4 +35,8 @@
 
 .list-group-item .xoacv:hover{
 	background-color: #f20;
+}
+
+.dragging{
+	transform: rotate(1deg);
 }
