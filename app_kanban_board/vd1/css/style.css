@@ -37,3 +37,7 @@
 .list-group-item:hover .xoacv{
 	opacity: 1;
 }
+
+.list-group-item .xoacv:hover{
+	background-color: #f20;
+}
