@@ -16,6 +16,9 @@
 	padding:3px;
 }
 
+.sorted-list{
+	min-height: 30px;
+}
 
 .list-group-item{
 	position: relative;
