@@ -1,0 +1,42 @@
+.he1{
+	text-align: center;
+}
+.he1 h5{
+	color: #f20;
+}
+
+.list-group{
+	margin-bottom: 3px;
+}
+#themcv{
+	width: 100%;
+	border: 1px solid blue;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	padding:3px;
+}
+
+
+.list-group-item{
+	position: relative;
+}
+
+.list-group-item .xoacv{
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+.list-group-item:hover .xoacv{
+	opacity: 1;
+}
+
+.list-group-item .xoacv:hover{
+	background-color: #f20;
+}
+
+.dragging{
+	transform: rotate(1deg);
+}

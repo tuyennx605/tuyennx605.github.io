@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Compiled and minified CSS -->
+
+
+	<link rel="stylesheet" type="text/css" href="css/rscss.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div class="wraper container" >
+		<div class="navbar navbar-default">
+			<div class="container-fluid he1">
+				<h5>KANBAN BOARD</h5>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<a href="#" class="list-group-item active">
+					    TODO <span>(4)</span>
+				</a>
+				<div class="list-group sorted-list" id="todo">
+	<!-- 				 <a href="#" class="list-group-item">Dapibus ac facilisis in
+							<i class="fas fa-trash-alt xoacv" onclick="app.clickDeleteJob(this)"></i>
+					  </a>
+					  <a href="#" class="list-group-item" >Morbi leo risus
+							<i class="fas fa-trash-alt xoacv" onclick="app.clickDeleteJob(this)"></i>
+					  </a>
+					  <a href="#" class="list-group-item">Porta ac consectetur ac
+							<i class="fas fa-trash-alt xoacv" onclick="app.clickDeleteJob(this)"></i>
+					  </a>
+					  <a href="#" class="list-group-item" >Vestibulum at eros
+							<i class="fas fa-trash-alt xoacv" onclick="app.clickDeleteJob(this)"></i>
+					  </a> -->
+				</div>
+				<input type="text" name="themcv" id="themcv" placeholder="add job..." onkeydown="app.newJob(event, 'todo', this)">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				 <a href="#" class="list-group-item active">
+					    DOING <span>(4)</span>
+				</a>
+				<div class="list-group  sorted-list">
+					
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				 <a href="#" class="list-group-item active">
+					    DONE <span>(4)</span>
+				</a>
+				<div class="list-group  sorted-list">
+					  
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure to delete this job?</p>
+      </div>
+      <div class="modal-footer">
+        <button  type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         <button id="btndelete" type="button" class="btn btn-default" data-dismiss="modal">AGREE</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+	
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 <!-- Compiled and minified JavaScript -->
+
+   <!--  <script>
+		  $( function() {
+		    $( ".sorted-list" ).sortable({
+		      connectWith: ".sorted-list"
+		    });
+		  } );
+	</script> -->
+	
+	<script src="javascrip/scrip.js"></script>
+
+
+</body>
+</html>
