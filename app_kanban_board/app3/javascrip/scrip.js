@@ -42,7 +42,7 @@ var app = {
 			DB.setData(list1);
 
 			//up date dom
-			this.addJobToList(jobName);
+			this.addJobToList(type, jobName);
 			//rsinput
 			$(input).val('');
 		}
