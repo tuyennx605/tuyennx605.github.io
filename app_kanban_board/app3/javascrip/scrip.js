@@ -47,19 +47,28 @@ var app = {
 			$(input).val('');
 		}
 	},
-	addJobToList: function(jobName){
+	addJobToList: function(type, jobName){
 		var item = '<a href="#" class="list-group-item">'+jobName +'<i class="fas fa-trash-alt xoacv" onclick="app.clickDeleteJob(this)"></i> </a>';
-		$('#todo').append(item);
+		$('#'+ type).append(item);
  },
 	clickDeleteJob: function (thei)
 	{
 		$('#myModal').modal();
 		console.log(thei);
-		var item = $(thei).parent();
-		console.log("iiiii"+ item);
+		var item = $(thei).parent();	//lay value id
+
+		
+
 		$('#btndelete').off('click');
 		$('#btndelete').on('click', function(){
-			console.log('1');
+
+			var columtype = item.parent().attr('id');	//lay value id
+			var itemPosition = $('#'+columtype+' .list-group-item').index(item);
+			console.log('item p: '+ itemPosition + "x "+ columtype);
+
+			list1[columtype].splice(itemPosition, 1);	//xoa phan tu tai vi tri kia va xoa 1 phan tu
+			console.log(list1);
+			DB.setData(list1);
 			item.remove();
 		});
 	}
@@ -72,7 +81,7 @@ $(function(){
 		var columgtype = list1[type]||[];
 
 		columgtype.forEach(function(job){
-		app.addJobToList(job);
+		app.addJobToList(type, job);
 	});
 	});
 
