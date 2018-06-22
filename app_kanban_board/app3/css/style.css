@@ -43,3 +43,8 @@
 .dragging{
 	transform: rotate(1deg);
 }
+span{
+	color: #f20;
+	font-weight: bold;
+	font-size: 17px;
+}

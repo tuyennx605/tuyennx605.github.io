@@ -1,4 +1,5 @@
 var COLUMN_TYPE = ['todo', 'doing', 'done'];
+var MAX_COLUMN = [10, 10, 1000];
 
 var DB = {
 	getData: function(){
@@ -19,6 +20,7 @@ var DB = {
 	},
 	setData: function(data){
 		localStorage.setItem('list', JSON.stringify(data));
+		setCoundata();
 	}
 };
 
@@ -37,7 +39,14 @@ var app = {
 				 list1[type] = [];
 				 console.log("vao day 4646" + list1);
 			}
-			console.log(typeof list1[type]);
+			if(list1[type].length >= MAX_COLUMN[COLUMN_TYPE.indexOf(type)] )
+			{
+				console.log("ko dc them nua: full: " +  MAX_COLUMN[COLUMN_TYPE.indexOf(type)] + "length: "+ list1[type].length);
+				$(input).val('');
+				alert('full');
+				return;
+			}
+
 			list1[type].push(jobName);
 			DB.setData(list1);
 
@@ -75,7 +84,7 @@ var app = {
 };
 	
 $(function(){
-
+setCoundata();
 
 	COLUMN_TYPE.forEach(function(type){
 		var columgtype = list1[type]||[];
@@ -93,11 +102,32 @@ $(function(){
 		start: function(event, ui){
 			//addstyle class
 			$(ui.item[0]).addClass('dragging');
-			console.log("vao");
+			console.log( ui);
+
+			ui.item.lodComumnType = ui.item.parent().attr('id');
+			ui.item.oldItemPosition = ui.item.index();
 		},
 		stop: function(event, ui){
 			//remove class
 			$(ui.item[0]).removeClass('dragging');
+
+			var oldColumnType = ui.item.lodComumnType;
+			var oldItemPosition = ui.item.oldItemPosition;
+			var newComumnType = ui.item.parent().attr('id');
+			var newItemPosition = ui.item.index();
+
+			//xoa cu
+			list1[oldColumnType].splice(oldItemPosition, 1);
+			//them
+			console.log(newItemPosition);
+			if(!list1[newComumnType])
+			{
+				 list1[newComumnType] = [];
+			}
+			list1[newComumnType].splice(newItemPosition, 0, ui.item[0].innerText);
+
+			//cap nhap
+			DB.setData(list1);
 		}
 	});
 });
@@ -105,3 +135,13 @@ $(function(){
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
+
+function setCoundata(){
+	COLUMN_TYPE.forEach(function(type){
+		if(!list1[type])
+			 list1[type] = [];
+		$('#'+type).prev().find('span').text('('+list1[type].length+')');
+	});
+}
+
+
