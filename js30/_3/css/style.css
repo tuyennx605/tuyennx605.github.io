@@ -1,0 +1,23 @@
+:root{
+	--base:red;
+	--spacing: 10px;
+	--blur:10px;
+}
+
+
+
+
+body{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+img{
+	margin-top: 20px;
+	width: 35%;
+	padding: var(--spacing);
+	background: var(--base);
+	filter:blur(var(--blur));
+}
+

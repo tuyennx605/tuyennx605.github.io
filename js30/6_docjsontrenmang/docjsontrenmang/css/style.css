@@ -1,0 +1,39 @@
+html, body{
+	width: 100%;
+}
+
+.wraper{
+	width: 70%;
+	margin:auto;
+	background-color: #f20;
+	height: 500px;
+
+	
+	
+}
+.w1{
+	display: flex;
+	/*flex-direction: column;*/
+	flex-flow: row wrap;	/*// de nhung cai ko flex thi no bi xuong dong*/
+	height: 500px;
+}
+
+.w1 > * {
+	flex: 1 100%;		/*cho tat ca cai nao ko flex la 100% voi cha*/
+}
+
+.w11{
+	background-color: #fff;
+	flex: 4 auto;
+	
+}
+.w12{
+	background-color: gray;
+	flex: 3 auto;
+	
+}
+.w13{
+	background-color: blue;
+	/*flex: 100%;*/
+	
+}
