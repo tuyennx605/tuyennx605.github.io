@@ -1,4 +1,4 @@
-var url = "https://tuyennx605.github.io/js30/6_docjsontrenmang/docjsontrenmang/file_json.html";
+var url = "https://tuyennx605.github.io/js30/6_docjsontrenmang/docjsontrenmang/file_json.json";
 const arr=[];
 
 // fetch(url, function(data){

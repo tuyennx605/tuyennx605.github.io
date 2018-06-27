@@ -3,58 +3,17 @@
     "evt" :  ltv,
     "data" :  [
         {
-            \"mark\": 100,
-            \"ag\": 1000,
-            \"condition\": 0,
-            \"currplay\": 41
+            "mark": 100,
+            "ag": 1000,
+            "condition": 0,
+            "currplay": 41
         },
         {
-            \"mark\": 200,
-            \"ag\": 2000,
-            \"condition\": 0,
-            \"currplay\": 40
-        },
-        {
-            \"mark\": 500,
-            \"ag\": 5000,
-            \"condition\": 0,
-            \"currplay\": 41
-        },
-        {
-            \"mark\": 1000,
-            \"ag\": 10000,
-            \"condition\": 0,
-            \"currplay\": 65
-        },
-        {
-            \"mark\": 5000,
-            \"ag\": 50000,
-            \"condition\": 0,
-            \"currplay\": 24
-        },
-        {
-            \"mark\": 10000,
-            \"ag\": 100000,
-            \"condition\": 0,
-            \"currplay\": 21
-        },
-        {
-            \"mark\": 50000,
-            \"ag\": 500000,
-            \"condition\": 0,
-            \"currplay\": 3
-        },
-        {
-            \"mark\": 100000,
-            \"ag\": 1000000,
-            \"condition\": 0,
-            \"currplay\": 4
-        },
-        {
-            \"mark\": 500000,
-            \"ag\": 5000000,
-            \"condition\": 0,
-            \"currplay\": 0
+            "mark": 200,
+            "ag": 2000,
+            "condition": 0,
+            "currplay": 40
         }
+       
     ]
 }
