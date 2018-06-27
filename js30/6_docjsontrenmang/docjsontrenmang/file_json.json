@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+
 	{
     "evt" :  ltv,
     "data" :  [
@@ -63,5 +58,3 @@
         }
     ]
 }
-</body>
-</html>
