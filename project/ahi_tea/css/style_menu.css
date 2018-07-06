@@ -1,0 +1,150 @@
+.menu{
+	width: 100%;
+	height: 70px;
+	background-color: #795548;
+	box-shadow: 2px 5px 10px 0px gray;
+	border-bottom: 1px solid gray;
+	z-index: 1;
+}
+
+.menu_content{
+	margin: auto;
+	max-width: 1140px;
+	height: 100%;
+	
+}
+.menu_content>a{	/*bao ngoai logo*/
+	display: inline-block;
+	height: 100%;
+	position: relative;
+
+}
+.logo{
+	max-height: 70%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.menu_right{
+	float: right;
+	height: 100%;
+}
+.menu_right>*{
+	float: left;
+	margin-right: 25px;
+}
+
+
+
+
+.main-menu{
+	height: 100%;
+	margin-bottom: 0px;
+}
+.main-menu li{
+	height: 100%;
+	float:left;
+	list-style-type: none;	/*//xóa chấm*/
+	padding:23px 12px;
+	position: relative;
+}
+.main-menu > li:hover{
+	background-color:#f7f4e1;
+}
+.main-menu > li:hover>a{
+	color:#795548;
+}
+
+.main-menu li a{
+	text-decoration: none;	/*//xóa gạch chân*/
+	color:#fff;
+}
+
+.main-menu  li  ul.sub-menu{	/*//day la tat ca nhung thang sub*/
+	background-color: #795548;
+	position: absolute;
+	top: 0%;
+	left: 100%;
+	width: 200px;
+	display: none;
+}
+
+.main-menu > li > ul.sub-menu{	/*// thang sub dau tien se drop xuong luon*/
+	background-color: #795548;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	width: 200px;
+}
+.sub-menu{
+	z-index: 1;
+}
+
+.sub-menu li{
+	float: none;
+	border-bottom: 1px solid #fff;
+}
+.sub-menu > li:hover{
+	background-color:#f7f4e1;	/*mau sua*/
+}
+
+.sub-menu > li:hover>a{
+	color:#795548;
+}
+
+.main-menu > li:hover > .sub-menu{
+	display: block;
+}
+.sub-menu > li:hover > .sub-menu{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon_user{
+	max-height: 60%;
+	margin-top: 13px;
+}
+
+.icon_giohang{
+	max-height: 60%;
+	margin-top: 13px;
+}
+
+.menu_search{
+
+}
+
+.menu_search *{
+	float: left;
+}
+
+.menu_search>input{
+	margin-top: 20px;
+    height: 30px;
+}
+
+.btn_search{
+	    width: 30px;
+    height: 30px;
+    background-color: #a6726a;
+    margin-top: 20px;
+}
+
+.btn_search>img{
+	width: 85%;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+

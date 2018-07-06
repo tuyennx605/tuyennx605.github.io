@@ -1,0 +1,180 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+
+		<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<link rel="stylesheet" type="text/css" href="css/rscss.css">
+		<link rel="stylesheet" type="text/css" href="css/style_pay.css">
+		<link rel="stylesheet" type="text/css" href="css/style_menu.css">
+		<link rel="stylesheet" type="text/css" href="css/style_banner.css">
+		<link rel="stylesheet" type="text/css" href="css/style_footer.css">
+	</head>
+	<body>
+
+		<div class="wrap">
+			<div class="menu">
+				<div class="menu_content">
+					<a href="#">
+						<img class="logo" src="img/common/logo.png" alt="erro" title="logo">
+					</a>
+					<div class="menu_right ">
+						<ul class="main-menu">
+							<li> <a href="#">
+								<i class="fas fa-home"></i>
+							</a> </li>
+							<li><a href="#">Milk Tea</a>
+								<ul class="sub-menu">
+									<li> <a href="#">RoyalTea</a></li>
+									<li><a href="#">CongCha</a></li>
+									<li><a href="#">DingTea</a></li>
+									<li><a href="#">ChaGo</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Coffe</a>
+
+							</li>
+							<li><a href="#">FastFood</a></li>
+							<li><a href="#">about</a></li>
+						</ul>
+						<div class="menu_search">
+							<input type="text" name="menu_search">
+							<div class="btn_search">
+								<img src="img/common/icon_search.png">
+							</div>	
+						</div>
+						<img class="icon_giohang" src="img/common/giohang.png">
+						<img class="icon_user" src="img/common/icon_user.png">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="content container">
+				<h1>Giỏ Hàng</h1>
+				
+				<div class="table-responsive">
+					<table >
+					<tr class="title">
+						<td class="hit">Product</td>
+						<td id="tensp" class="hit">Tên sp</td>
+						<td id="dongia"  class="hit">Đơn Giá</td>
+						<td id="soluong" class="hit">Số Lượng</td>
+						<td id="thanhtien" class="hit">Thành Tiền</td>
+						<td id="option" class="hit">option</td>
+					</tr>
+					<tbody id="tabl">
+						<tr>
+							<td class="img1"><img src="img/product/trasua1.jpg"></td>
+							<td class="tensp1">Nguyen van 132323423423</td>
+							<td class="dongia1">20.000đ</td>
+							<td class="soluong1">
+								<input type="button" name="tru" value="+" id="tru">
+								<span> 1 </span>
+								<input type="button" name="cong" value="-" id="cong">
+							</td>
+							<td class="thanhtien1">500.000đ</td>
+							<td class="option1">
+								<input type="button" name="xoa" value="X" id="xoa">
+								<label for="xoa">Xóa</label>
+							</td>
+						</tr>
+					</tbody>
+					
+
+				</table>
+				</div >
+				
+
+
+
+
+
+				<form id="thanhtoan" class="form-horizontal" action="/action_page.php">
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="email">Họ và Tên:</label>
+				      <div class="col-sm-10">
+				      	<input type="text" name="name" class="input1 input2 form-control" id="name">
+						<span></span>
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="pwd">Số Điện Thoại:</label>
+				      <div class="col-sm-10"> 
+				      <input type="text" name="sdt" class="input1 input2 form-control" id="sdt">         
+				      </div>
+				    </div>
+
+				     <div class="form-group">
+					      <label class="control-label col-sm-2" for="pwd">địa chỉ:</label>
+					      <div class="col-sm-10"> 
+					      	<textarea class="input1 input2 form-control" name="diachi" id="diachi"></textarea>
+					<span></span>
+					      <!-- <input type="text" name="sdt" class="input1 input2 form-control" id="sdt">   -->       
+					      </div>
+				    </div>
+
+				    <div class="form-group">        
+				      <div class="col-sm-offset-2 col-sm-10">
+				        <div class="checkbox">
+				          <label><input type="checkbox" name="remember"> Xác Nhận</label>
+				        </div>
+				      </div>
+				    </div>
+				    <div class="form-group">        
+				      <div class="col-sm-offset-2 col-sm-10">
+				        <button type="submit" class="btn btn-default">Submit</button>
+				      </div>
+				    </div>
+				  </form>
+
+
+
+
+
+			</div>
+
+			<div class="footer">
+					<div class="row content_footer">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer_row1">
+							<i class="far fa-clock"> Giờ mở cửa: 7h30AM - 23hPM</i>
+							<p><img src="img/common/milktea.jpg" > Milk Tea</p> 
+							<p><img src="img/common/fastfood.jpg" > Fastfood</p> 
+							<p><img src="img/common/caffe.jpg" > caffe</p> 
+						</div>
+
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer_row2">
+							<i class="fas fa-map-marker-alt"></i> Location:<br>
+							Số 4 Nguyễn ĐÌnh Chiểu<br>
+							Số 5 Cầu Giấy, Hà Nội<br>
+							<i class="fas fa-phone-volume"></i> : 01699977433 - 9999 9999 999<br>
+
+							<i class="fab fa-facebook icon_social"></i>  <i class="fab fa-viber icon_social"></i>   <i class="fab fa-google-plus-square icon_social"></i>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 footer_row3">
+							Phản Hồi: <br>
+							<textarea></textarea><br>
+							<input type="submit" name="" value="Submit">
+						</div>
+					</div>
+				</div>
+		</div>
+		
+
+
+		
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script src="javascrip/scrip.js"></script>
+		<script src="javascrip/script_slide.js"></script>
+	</body>
+	</html>

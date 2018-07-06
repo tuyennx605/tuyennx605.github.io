@@ -1,0 +1,90 @@
+.wrap{
+	width: 100%;
+}
+table{
+	width: 100%;
+}
+
+table, th, td{
+	border:1px solid gray;
+	border-collapse:collapse;
+	padding: 10px;
+	 text-align: center; 
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.title{
+	background-color: #D7CCC8;
+}
+
+.title>td{
+	font-weight: bold;
+}
+
+#tabl{
+	width: 100%;
+}
+
+#tabl>tr{
+	width: 100%;
+}
+
+.img1{
+	width: 10%;
+}
+.img1 img{
+	width: 70%;
+}
+
+.tensp1{
+	width: 30%;
+}
+.dongia1{
+	width: 10%;
+}
+
+.soluong1{
+	width: 20%;
+}
+
+.thanhtien1{
+	width: 15%;
+}
+
+.option1{
+	width: 15%;
+}
+
+#tru{
+	background-color: #f20;
+	padding: 3px 10px;
+	margin-right: 5px;
+}
+
+#cong{
+	background-color: gray;
+	padding: 4px 13px;
+	margin-left: 5px;
+}
+
+#xoa{
+	padding: 3px 10px;
+}
+
+
+
+
+
+
+
+
+#thanhtoan{
+	margin:auto;
+	padding:10px;
+	margin-top: 30px;
+}
+
+.btn{
+	padding:10px 20px;
+}
