@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function(){
 										'<i class="fas fa-star"></i>'+
 										'<i class="fas fa-star"></i>'+
 										'<br>'+
-										'<a href="detail.html">'+
+										'<a href="detail.html"  class="saveObj">'+
 										'<p class="name_">'+data11[i].name+'</p>'+
 										'</a>';
 								if(data11[i].sale>0)

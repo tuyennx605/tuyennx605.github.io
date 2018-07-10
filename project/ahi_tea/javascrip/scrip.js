@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	var giohang = document.querySelectorAll('.div_anh .mauden1 img');
 	var numGioHang = document.querySelector('.wrap_giohang1 p');
 
-	
+
 	// console.log(anim_dilen);
 
 	//scroll
@@ -134,7 +134,7 @@ function loadMilkTea(){
 										'<i class="fas fa-star"></i>'+
 										'<i class="fas fa-star"></i>'+
 										'<br>'+
-										'<a href="detail.html">'+
+										'<a href="detail.html" class="saveObj">'+
 										'<p class="name_">'+trasua[i].name+'</p>'+
 										'</a>';
 								if(trasua[i].sale>0)
@@ -196,7 +196,7 @@ function loadMilkTea(){
 										'<i class="fas fa-star"></i>'+
 										'<i class="fas fa-star"></i>'+
 										'<br>'+
-										'<a href="detail.html">'+
+										'<a href="detail.html"  class="saveObj">'+
 											'<p class="name_">'+cafe[i].name+'</p>'+
 										'</a>';
 								if(cafe[i].sale>0)
@@ -256,7 +256,7 @@ function loadMilkTea(){
 										'<i class="fas fa-star"></i>'+
 										'<i class="fas fa-star"></i>'+
 										'<br>'+
-										 '<a href="detail.html">'+
+										 '<a href="detail.html"  class="saveObj">'+
 										'<p class="name_">'+fastfood[i].name+'</p>'+
 										'</a>';
 								if(fastfood[i].sale>0)
