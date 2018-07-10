@@ -56,14 +56,14 @@ table, th, td{
 	width: 15%;
 }
 
-#tru{
-	background-color: #f20;
+.tru{
+	background-color: gray;
 	padding: 3px 10px;
 	margin-right: 5px;
 }
 
-#cong{
-	background-color: gray;
+.cong{
+	background-color: #f20;
 	padding: 4px 13px;
 	margin-left: 5px;
 }
