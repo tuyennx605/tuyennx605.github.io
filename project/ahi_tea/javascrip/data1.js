@@ -65,7 +65,7 @@ for(var i=1; i<=20; i++){
 
 
 for(var i=1; i<=12; i++){
-	if(i%3!=0)
+	if(i%5!=0)
 	{
 		cafe.push(
 		new obj(
@@ -100,7 +100,7 @@ for(var i=1; i<=12; i++){
 }
 
 for(var i=1; i<=16; i++){
-	if(i%3!=0)
+	if(i%5!=0)
 	{
 		fastfood.push(
 		new obj(
@@ -134,4 +134,5 @@ for(var i=1; i<=16; i++){
 	}
 	
 }
+
 
