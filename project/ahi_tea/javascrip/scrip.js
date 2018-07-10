@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			// console.log($(anim_dilen[i]).offset().top - $(window).scrollTop());
 			// if(anim_dilen[i].classList.contains('dilen')==true)
 			// 	continue;
-			console.log(anim_dilen[i].classList.contains('dilen') + " " +  i);
+			// console.log(anim_dilen[i].classList.contains('dilen') + " " +  i);
 			if($(anim_dilen[i]).offset().top-450 < window.pageYOffset)
 			{
 				anim_dilen[i].classList.add('dilen');	
