@@ -384,3 +384,108 @@ html, body{
 .bounceInUp1 {
   animation: bounceInUp1 2s linear;
 }
+
+
+/*animation cuon chuot*/
+
+@-webkit-keyframes cd_dilen{
+	from{
+		transform: translateY(200px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+
+@-webkit-keyframes cd_sangphai{
+	from{
+		transform: translateX(-200px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes cd_sangtrai{
+	from{
+		transform: translateX(200px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes cd_zommto{
+
+	0%{transform: scale(0.1);opacity: 0;}
+	90%{transform: scale(1.3);opacity: 1;}
+	100%{transform: scale(1);opacity: 1;}
+}
+
+
+@-webkit-keyframes flip1 {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+
+
+.scroll_mouse_dilen, .scroll-LeftToRight, .scroll-RightToLeft, .scroll-zoomto, .scroll-dilen{
+	opacity: 0;
+}
+.scroll_mouse_dilen.dilen{
+	animation:cd_dilen 1s ease forwards;
+}
+
+.scroll-LeftToRight.cdLeftToRight{
+	animation:cd_sangphai 1s ease forwards;
+}
+
+.scroll-RightToLeft.cdRightToLeft{
+	animation:cd_sangtrai 1s ease forwards;
+}
+.scroll-zoomto.cdZoomTo{
+	animation:cd_zommto 1s ease forwards;
+}
+
+.scroll-flip1.flip1{
+	animation:flip1 1s ease forwards;
+}
