@@ -29,8 +29,7 @@ var mangPay = [trasua[0], trasua[1], trasua[5], cafe[5], cafe[2], fastfood[10]];
 						'</td>'+
 						'<td class="thanhtien1">'+(mangPay[i].sl*mangPay[i].giaSizeS)+'</td>'+
 						'<td class="option1">'+
-							'<input type="button" name="xoa" value="X" class="xoa">'+
-							'<label for="xoa">Xóa</label>'+
+							'<input type="button" name="xoa" value="Xóa" class="xoa">'+
 						'</td>'+
 					'</tr>';
 	 	}

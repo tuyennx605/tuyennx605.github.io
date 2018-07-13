@@ -11,7 +11,7 @@
 	max-height:none;
 	margin:0px auto 0px;
 	z-index:90;
-	border:3px solid #FFFFFF;
+	/*border:3px solid #FFFFFF;*/
 	text-align:left; /* reset align=center */
 	font-size: 10px;
 }
