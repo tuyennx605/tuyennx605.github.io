@@ -105,44 +105,41 @@ function loadMilkTea(){
 		let html1 = '';
 		for(let i=0; i<4; i++)
 		{
-			 html1+= '<div class="welcome_anh scroll_mouse_dilen">'+
+			html1+='<div class="mot_sp col-xs-6 col-sm-6 col-md-3 col-lg-3">'+
+			'<div class="div_anh_wrap">'+
 
-								'<div class="mot_sp">'+
-									'<div class="div_anh_wrap">'+
+				'<div class="div_anh">'+
 
-										'<div class="div_anh">'+
+					'<img src="'+trasua[i].urlImage+'" class="img-responsive">'+
 
-											'<img src="'+trasua[i].urlImage+'" class="img-responsive">'+
-
-											'<div class="mauden1"><img src="img/common/giohang.png"></div>'+
-										'</div>';
-											
-			if(trasua[i].sale>0)
-			{
-				html1+='<div class="sale1">'+
-							'<img src="img/common/sale1.png">'+
-							'<p>'+trasua[i].sale+'%</p>'+
-						'</div>';
-			}
-										
-										
-							html1+='</div>'+
-									'<div class="content_bot">'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<br>'+
-										'<a href="detail.html" class="saveObj">'+
-										'<p class="name_">'+trasua[i].name+'</p>'+
-										'</a>';
-								if(trasua[i].sale>0)
-										html1+='<p class="gia_">'+'<del>'+trasua[i].giaSizeS+'</del>  '+(trasua[i].giaSizeS-trasua[i].giaSizeS*trasua[i].sale/100)+'Đ</p>';
-								else
-										html1+='<p class="gia_">'+trasua[i].giaSizeS+'Đ</p>';
-									html1+='</div>'+
-								'</div>'+
+					'<div class="mauden1"><img src="img/common/giohang.png"></div>'+
+				'</div>';
+					
+					if(trasua[i].sale>0)
+					{
+					html1+='<div class="sale1">'+
+						'<img src="img/common/sale1.png">'+
+						'<p>'+trasua[i].sale+'%</p>'+
+					'</div>';
+					}
+									
+									
+						html1+='</div>'+
+								'<div class="content_bot">'+
+									'<i class="fas fa-star"></i>'+
+									'<i class="fas fa-star"></i>'+
+									'<i class="fas fa-star"></i>'+
+									'<i class="fas fa-star"></i>'+
+									'<i class="fas fa-star"></i>'+
+									'<br>'+
+									'<a href="detail.html"  class="saveObj">'+
+									'<p class="name_">'+trasua[i].name+'</p>'+
+									'</a>';
+							if(trasua[i].sale>0)
+									html1+='<p class="gia_">'+'<del>'+trasua[i].giaSizeS+'</del>  '+(trasua[i].giaSizeS-trasua[i].giaSizeS*trasua[i].sale/100)+'Đ</p>';
+							else
+									html1+='<p class="gia_">'+trasua[i].giaSizeS+'Đ</p>';
+								html1+='</div>'+
 							'</div>';
 
 		}
@@ -167,45 +164,42 @@ function loadMilkTea(){
 		let html1 = '';
 		for(let i=0; i<4; i++)
 		{
-			 html1+= '<div class="welcome_anh scroll_mouse_dilen">'+
+			html1+='<div class="mot_sp col-xs-6 col-sm-6 col-md-3 col-lg-3">'+
+			'<div class="div_anh_wrap">'+
 
-								'<div class="mot_sp">'+
-									'<div class="div_anh_wrap">'+
+				'<div class="div_anh">'+
 
-										'<div class="div_anh">'+
+					'<img src="'+cafe[i].urlImage+'" class="img-responsive">'+
 
-											'<img src="'+cafe[i].urlImage+'" class="img-responsive">'+
-
-											'<div class="mauden1"><img src="img/common/giohang.png"></div>'+
-										'</div>';
-											
-			if(cafe[i].sale>0)
-			{
-				html1+='<div class="sale1">'+
-							'<img src="img/common/sale1.png">'+
-							'<p>'+cafe[i].sale+'%</p>'+
-						'</div>';
-			}
-										
-										
-							html1+='</div>'+
-									'<div class="content_bot">'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<br>'+
-										'<a href="detail.html"  class="saveObj">'+
-											'<p class="name_">'+cafe[i].name+'</p>'+
-										'</a>';
-								if(cafe[i].sale>0)
-										html1+='<p class="gia_">'+'<del>'+cafe[i].giaSizeS+'</del>  '+(cafe[i].giaSizeS-cafe[i].giaSizeS*cafe[i].sale/100)+'Đ</p>';
-								else
-										html1+='<p class="gia_">'+cafe[i].giaSizeS+'Đ</p>';
-									html1+='</div>'+
-								'</div>'+
-							'</div>';
+					'<div class="mauden1"><img src="img/common/giohang.png"></div>'+
+				'</div>';
+					
+if(cafe[i].sale>0)
+{
+html1+='<div class="sale1">'+
+	'<img src="img/common/sale1.png">'+
+	'<p>'+cafe[i].sale+'%</p>'+
+'</div>';
+}
+				
+				
+	html1+='</div>'+
+			'<div class="content_bot">'+
+				'<i class="fas fa-star"></i>'+
+				'<i class="fas fa-star"></i>'+
+				'<i class="fas fa-star"></i>'+
+				'<i class="fas fa-star"></i>'+
+				'<i class="fas fa-star"></i>'+
+				'<br>'+
+				'<a href="detail.html"  class="saveObj">'+
+				'<p class="name_">'+cafe[i].name+'</p>'+
+				'</a>';
+		if(cafe[i].sale>0)
+				html1+='<p class="gia_">'+'<del>'+cafe[i].giaSizeS+'</del>  '+(cafe[i].giaSizeS-cafe[i].giaSizeS*cafe[i].sale/100)+'Đ</p>';
+		else
+				html1+='<p class="gia_">'+cafe[i].giaSizeS+'Đ</p>';
+			html1+='</div>'+
+		'</div>';
 
 		}
 
@@ -227,45 +221,42 @@ function loadMilkTea(){
 		let html1 = '';
 		for(let i=0; i<4; i++)
 		{
-			 html1+='<div class="welcome_anh scroll_mouse_dilen">'+
+			html1+='<div class="mot_sp col-xs-6 col-sm-6 col-md-3 col-lg-3">'+
+			'<div class="div_anh_wrap">'+
 
-								'<div class="mot_sp">'+
-									'<div class="div_anh_wrap">'+
+				'<div class="div_anh">'+
 
-										'<div class="div_anh">'+
+					'<img src="'+fastfood[i].urlImage+'" class="img-responsive">'+
 
-											'<img src="'+fastfood[i].urlImage+'" class="img-responsive">'+
-
-											'<div class="mauden1"><img src="img/common/giohang.png"></div>'+
-										'</div>';
-											
-			if(fastfood[i].sale>0)
-			{
-				html1+='<div class="sale1">'+
-							'<img src="img/common/sale1.png">'+
-							'<p>'+fastfood[i].sale+'%</p>'+
-						'</div>';
-			}
-										
-										
-							html1+='</div>'+
-									'<div class="content_bot">'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<i class="fas fa-star"></i>'+
-										'<br>'+
-										 '<a href="detail.html"  class="saveObj">'+
-										'<p class="name_">'+fastfood[i].name+'</p>'+
-										'</a>';
-								if(fastfood[i].sale>0)
-										html1+='<p class="gia_">'+'<del>'+fastfood[i].giaSizeS+'</del>  '+(fastfood[i].giaSizeS-fastfood[i].giaSizeS*fastfood[i].sale/100)+'Đ</p>';
-								else
-										html1+='<p class="gia_">'+fastfood[i].giaSizeS+'Đ</p>';
-									html1+='</div>'+
-								'</div>'+
-							'</div>';
+					'<div class="mauden1"><img src="img/common/giohang.png"></div>'+
+				'</div>';
+					
+if(fastfood[i].sale>0)
+{
+html1+='<div class="sale1">'+
+	'<img src="img/common/sale1.png">'+
+	'<p>'+fastfood[i].sale+'%</p>'+
+'</div>';
+}
+				
+				
+	html1+='</div>'+
+			'<div class="content_bot">'+
+				'<i class="fas fa-star"></i>'+
+				'<i class="fas fa-star"></i>'+
+				'<i class="fas fa-star"></i>'+
+				'<i class="fas fa-star"></i>'+
+				'<i class="fas fa-star"></i>'+
+				'<br>'+
+				'<a href="detail.html"  class="saveObj">'+
+				'<p class="name_">'+fastfood[i].name+'</p>'+
+				'</a>';
+		if(fastfood[i].sale>0)
+				html1+='<p class="gia_">'+'<del>'+fastfood[i].giaSizeS+'</del>  '+(fastfood[i].giaSizeS-fastfood[i].giaSizeS*fastfood[i].sale/100)+'Đ</p>';
+		else
+				html1+='<p class="gia_">'+fastfood[i].giaSizeS+'Đ</p>';
+			html1+='</div>'+
+		'</div>';
 
 		}
 

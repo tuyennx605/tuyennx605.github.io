@@ -35,7 +35,7 @@ for(var i=1; i<=20; i++){
 		new obj(
 			i,
 			1,
-			'trà sữa chân châu loai'+i,
+			'Trà sữa chân châu loai'+i,
 			'img/product/tea/ts'+i+'.png',
 			10000,
 			15000,
@@ -50,7 +50,7 @@ for(var i=1; i<=20; i++){
 		new obj(
 			i,
 			1,
-			'trà sữa chân châu loai '+i,
+			'Trà sữa chân châu loai '+i,
 			'img/product/tea/ts'+i+'.png',
 			10000,
 			15000,
@@ -71,7 +71,7 @@ for(var i=1; i<=12; i++){
 		new obj(
 			i,
 			2,
-			'cafe loai '+i,
+			'Caffee loai '+i,
 			'img/product/cafe/c'+i+'.png',
 			10000,
 			15000,
@@ -86,7 +86,7 @@ for(var i=1; i<=12; i++){
 		new obj(
 			i,
 			2,
-			'cafe loai'+i,
+			'Caffee loai'+i,
 			'img/product/cafe/c'+i+'.png',
 			10000,
 			15000,
@@ -106,7 +106,7 @@ for(var i=1; i<=16; i++){
 		new obj(
 			i,
 			3,
-			'fastfood loai '+i,
+			'Fastfood loai '+i,
 			'img/product/fastfood/f'+i+'.png',
 			10000,
 			15000,
@@ -121,7 +121,7 @@ for(var i=1; i<=16; i++){
 		new obj(
 			i,
 			3,
-			'fastfood loai'+i,
+			'Fastfood loai'+i,
 			'img/product/fastfood/f'+i+'.png',
 			10000,
 			15000,

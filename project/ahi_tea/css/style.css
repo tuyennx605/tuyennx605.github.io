@@ -85,7 +85,7 @@ html, body{
 }
 
 .parallax2 {
-	margin-top: 100px;
+	margin-top: 10px;
 	position: relative;
     /* The image used */
     background-image: url("../img/banner/b2.jpg");
@@ -106,7 +106,7 @@ html, body{
 }
 
 .parallax3 {
-	margin-top: 100px;
+	margin-top: 10px;
 	position: relative;
     /* The image used */
     background-image: url("../img/banner/b6.jpg");
@@ -154,9 +154,10 @@ html, body{
 }
 
 .mot_sp{
-	width: 90%;
+	/* width: 90%; */
 	cursor: pointer;
-	transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 70px;
 }
 
 .div_anh{

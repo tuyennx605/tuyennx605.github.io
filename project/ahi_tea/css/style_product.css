@@ -118,6 +118,7 @@
 
 .title_sp{
 	margin-top: 20px;
+	margin-bottom: 50px;
 	width: 40%;
 	padding: 20px;
 	background-color: #795548;
@@ -177,4 +178,8 @@
     color: #fff;
     background-color: #795548;
     border-color: #337ab7;
+}
+
+.page {
+    text-align: center;
 }

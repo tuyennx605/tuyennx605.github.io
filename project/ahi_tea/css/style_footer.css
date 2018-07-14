@@ -5,7 +5,7 @@
 	background-color: #6d4c41;
 	font-size: 17px;
 	color: #fff;
-	padding: 10px 5px;
+	padding: 26px 5px;
 	
 }
 
@@ -55,5 +55,6 @@
 }
 .far.fa-clock {
     font-size: 20px;
-    font-weight: 900;
+	font-weight: 700;
 }
+
