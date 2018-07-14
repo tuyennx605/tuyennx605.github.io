@@ -132,3 +132,13 @@ document.addEventListener('DOMContentLoaded', function(){
 	spcothebiet.innerHTML = html2;
 	
 });
+
+function showFilter(button) {
+	if (button.innerHTML === "Hide filter") {
+		document.querySelector('.filter').style.display = "none";
+		button.innerHTML = '<i class="fas fa-filter"></i> Filter products';
+	} else {
+		document.querySelector('.filter').style.display = "block";
+		button.innerHTML = "Hide filter";
+	}
+}

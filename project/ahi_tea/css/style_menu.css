@@ -280,3 +280,176 @@ ul.nav.navbar-nav {
 .navbar-nav {
     margin: 0px 15px;
 }
+
+
+
+
+
+
+
+
+/* gio hang */
+
+.shopping-cart {
+    /* visibility: hidden; */
+    position: fixed;
+    bottom: 50vh;
+    right: 0.5em;
+    font-size: 1.5em;
+    background-color: #795548;
+    /* opacity: 0; */
+	transition: all 0.3s linear;
+	z-index: 1000000;
+	padding: 0% 7px;
+	border-radius: 5px;
+}
+.shopping-cart a {
+    color: #fff;
+}
+.shopping-item {
+    padding: 0.3em 0.5em;
+    position: relative;
+}
+
+.count-item {
+    position: absolute;
+    top: -0.3em;
+    right: -0.6em;
+    color: red;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: rgb(82, 53, 53);
+    width: 1.3em;
+    height: 1.3em;
+	text-align: center;
+	line-height: 1.4;
+    border-radius: 50%;
+}
+
+.navbar-nav {
+    margin: 0px 0px;
+}
+
+
+/* totop */
+
+.toTop{
+	position: fixed;
+	bottom: 1em;
+	padding: 0% 20px;
+    right: 1em;
+    font-size: 1.5em;
+    background-color: #967569af;
+    /* opacity: 0; */
+	transition: all 0.3s linear;
+	z-index: 1000000;
+	color: #fff;
+	box-shadow: 5px 0 10px rgba(14, 13, 13, 0.05);
+	opacity: 0;
+	visibility: visible;
+}
+
+
+
+
+/* test */
+
+
+@media (min-width: 768px){
+.navbar-toggle {
+	display: block;
+}
+
+.navbar-header {
+    float: none;
+}
+
+.navbar-collapse.collapse {
+    display: none!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0;
+}
+
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-nav>li {
+    float: none;
+}
+.navbar-right {
+    float: none!important;
+}
+
+.navbar-right .dropdown-menu {
+    right: auto;
+    left: auto;
+}
+.navbar-collapse.in {
+	overflow-y: visible!important;
+	display: block!important;
+}
+
+
+
+}
+
+@media (min-width: 900px){
+	.navbar-toggle.collapsed {
+		display: none;
+	}
+	.navbar-collapse.collapse {
+		display: block!important;
+		height: auto!important;
+		padding-bottom: 0;
+		overflow: visible!important;
+	}
+
+	.navbar-header {
+		float: left;
+	}
+
+
+	.navbar-nav {
+		float: left;
+		margin: 0;
+
+		
+	}
+
+	/* .giua{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} */
+
+	.navbar-nav>li>a {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.navbar-nav>li {
+		float: left;
+	}
+
+	.navbar-right {
+		float: right!important;
+		margin-right: -15px;
+	}
+
+	.navbar-right .dropdown-menu {
+		right: 0;
+		left: auto;
+	}
+	.navbar-collapse.in {
+		overflow-y: visible;
+		display: block;
+	}
+}

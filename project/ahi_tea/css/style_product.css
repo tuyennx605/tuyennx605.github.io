@@ -29,7 +29,7 @@
 .mot_sp{
 	cursor: pointer;
 	transition: 0.5s;
-	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 .div_anh{
@@ -122,4 +122,59 @@
 	padding: 20px;
 	background-color: #795548;
 	color: #fff;
+}
+
+
+/* .nau11{
+	background-color: #795548;
+} */
+
+.btn-filter {
+    display: none;
+    outline: none;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.filter {
+    transition: all 0.3s linear;
+}
+
+.filter-form {
+	background-color: #795548;
+	box-shadow: 5px 0px 10px 0px gray;
+	/* padding: 10px; */
+	color: #fff;
+}
+
+.title-form {
+    text-align: center;
+    padding: 0.8em;
+    border-bottom: 2px solid white;
+}
+
+.body-form {
+    padding: 0.8em;
+    padding-left: 1.5em;
+}
+
+@media (max-width: 992px) { 
+	.filter {
+		display: none;
+	}
+
+	.btn-filter {
+		display: block;
+	}
+}
+
+.pagination>li>a, .pagination>li>span {
+
+    color: #795548;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    color: #fff;
+    background-color: #795548;
+    border-color: #337ab7;
 }
