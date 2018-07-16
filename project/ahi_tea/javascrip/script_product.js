@@ -80,10 +80,11 @@ document.addEventListener('DOMContentLoaded', function(){
 										'<a href="detail.html"  class="saveObj">'+
 										'<p class="name_">'+data11[i].name+'</p>'+
 										'</a>';
-								if(data11[i].sale>0)
-										html1+='<p class="gia_">'+'<del>'+data11[i].giaSizeS+'</del>  '+(data11[i].giaSizeS-data11[i].giaSizeS*data11[i].sale/100)+'Đ</p>';
-								else
-										html1+='<p class="gia_">'+data11[i].giaSizeS+'Đ</p>';
+								// if(data11[i].sale>0)
+								// 		html1+='<p class="gia_">'+'<del>'+data11[i].giaSizeS+'</del>  '+(data11[i].giaSizeS-data11[i].giaSizeS*data11[i].sale/100)+'Đ</p>';
+								// else
+								// 		html1+='<p class="gia_">'+'<del></del>  '+(data11[i].giaSizeS-data11[i].giaSizeS*data11[i].sale/100)+'Đ</p>';
+										html1+='<p class="gia_">'+(data11[i].giaSizeS-data11[i].giaSizeS*data11[i].sale/100)+'Đ</p>';
 									html1+='</div>'+
 								'</div>';
 	}
@@ -122,10 +123,11 @@ document.addEventListener('DOMContentLoaded', function(){
 										'<a href="detail.html">'+
 										'<p class="name_">'+dataCotheBiet[i].name+'</p>'+
 										'</a>';
-								if(dataCotheBiet[i].sale>0)
-										html2+='<p class="gia_">'+'<del>'+dataCotheBiet[i].giaSizeS+'</del>  '+(dataCotheBiet[i].giaSizeS-dataCotheBiet[i].giaSizeS*dataCotheBiet[i].sale/100)+'Đ</p>';
-								else
-										html2+='<p class="gia_">'+dataCotheBiet[i].giaSizeS+'Đ</p>';
+								// if(dataCotheBiet[i].sale>0)
+								// 		html2+='<p class="gia_">'+'<del>'+dataCotheBiet[i].giaSizeS+'</del>  '+(dataCotheBiet[i].giaSizeS-dataCotheBiet[i].giaSizeS*dataCotheBiet[i].sale/100)+'Đ</p>';
+								// else
+								// 		html2+='<br><p class="gia_">'+dataCotheBiet[i].giaSizeS+'Đ</p>';
+								html2+='<p class="gia_">'+(dataCotheBiet[i].giaSizeS-dataCotheBiet[i].giaSizeS*dataCotheBiet[i].sale/100)+'Đ</p>';
 									html2+='</div>'+
 								'</div>';
 	}

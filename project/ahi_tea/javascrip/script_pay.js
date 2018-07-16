@@ -1,16 +1,49 @@
-var mangPay = [trasua[0], trasua[1], trasua[5], cafe[5], cafe[2], fastfood[10]];
- mangPay[0].sl = 5;
- for(var i=0; i<mangPay.length; i++)
+var mangPay = [];
+var tongtien1 = 0;
+
+ for(var i=0; i<list1.length; i++)
  {
- 	mangPay[i].sl = Math.floor(Math.random()*3 + 1);
+ 	mangPay.push(list1[i]);
  }
+ console.log(mangPay.length);
+
+ function clickchange(input) {
+	console.log(input.value);
+	
+	for(let i=0; i<mangPay.length; i++){
+		if(mangPay[i].name == input.getAttribute("data-key"))
+		{
+			tongtien1-=(mangPay[i].giaSizeS*mangPay[i].sl);
+			list1[i].sl = parseInt(input.value);
+			mangPay[i].sl =  parseInt(input.value);
+			updateGioHang();
+
+			console.log(input.parentNode.parentNode.nextSibling.innerText);
+			input.parentNode.parentNode.nextSibling.innerText = (mangPay[i].sl*mangPay[i].giaSizeS);
+				// console.log(this.previousSibling);
+				// console.log(this.parentNode.nextSibling);
+				
+				tongtien1+=(mangPay[i].giaSizeS*mangPay[i].sl);
+				tongtien.innerText = "Tổng Tiền: "+tongtien1+"đ";
+			break;
+		}
+	}
+	
+		
+	
+
+}
+
+
 
  document.addEventListener('DOMContentLoaded', function(){
  	var tabl = document.getElementById('tabl');
  	var tongtien = document.getElementById('tongtien');
-	var tongtien1 = 0;
+	
 
 
+
+	
  	
 
  	function loadList(){
@@ -22,14 +55,16 @@ var mangPay = [trasua[0], trasua[1], trasua[5], cafe[5], cafe[2], fastfood[10]];
 						'<td class="img1"><img src="'+mangPay[i].urlImage+'"></td>'+
 						'<td class="tensp1">'+mangPay[i].name+'</td>'+
 						'<td class="dongia1">'+mangPay[i].giaSizeS+'</td>'+
-						'<td class="soluong1">'+
-							'<input type="button" name="tru" value="-" class="tru">'+
-							'<span> '+mangPay[i].sl+' </span>'+
-							'<input type="button" name="cong" value="+" class="cong">'+
-						'</td>'+
+						// '<td class="soluong1">'+
+						// 	'<input type="button" name="tru" value="-" class="tru">'+
+						// 	'<span> '+mangPay[i].sl+' </span>'+
+						// 	'<input type="button" name="cong" value="+" class="cong">'+
+						// '</td>'+
+						'<td class="soluong1"><div class="col"><input type="number" class="form1" name="quantity" value="'+mangPay[i].sl+'" min="0" title="Quantity" onchange="clickchange(this)" data-key = "'+mangPay[i].name+'"></div></td>'+
+						// '<div class="col"><input type="number" class="form-control" name="quantity" value="1" min="0" title="Quantity" "></div>'+
 						'<td class="thanhtien1">'+(mangPay[i].sl*mangPay[i].giaSizeS)+'</td>'+
 						'<td class="option1">'+
-							'<input type="button" name="xoa" value="Xóa" class="xoa">'+
+							'<input type="button" name="xoa" value="Xóa" class="xoa" data-keyxoa = "'+i+'">'+
 						'</td>'+
 					'</tr>';
 	 	}
@@ -94,13 +129,17 @@ var mangPay = [trasua[0], trasua[1], trasua[5], cafe[5], cafe[2], fastfood[10]];
  		console.log(this.parentNode.previousSibling.previousSibling.previousSibling.previousSibling.innerText);
  		// 
  		// 
- 		// 
+		 // 
  		for(let j=0; j<mangPay.length; j++){
  			if(mangPay[j].name==this.parentNode.previousSibling.previousSibling.previousSibling.previousSibling.innerText){
-
+				
  				tongtien1-= (mangPay[j].sl*mangPay[j].giaSizeS);
  				tongtien.innerText = "Tổng Tiền: "+tongtien1+"đ";
- 				tabl.removeChild(this.parentNode.parentNode);
+				 tabl.removeChild(this.parentNode.parentNode);
+				 mangPay.splice(j, 1);
+				list1.splice(j, 1);
+				console.log(mangPay);
+				updateGioHang();
  		// console.log(this.parentNode.parentNode);
  				break;
  			}

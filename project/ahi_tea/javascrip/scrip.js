@@ -79,18 +79,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 	 
-	updateGioHang();
-	for(var i=0; i<giohang.length; i++){
-		giohang[i].addEventListener('click', function(){
-			console.log(this.parentNode.parentNode.parentNode.nextSibling.getElementsByClassName('name_')[0].innerText);
-			CoundGioHang++;
-			updateGioHang();
-		});
-	}
+	// updateGioHang();
+	// for(var i=0; i<giohang.length; i++){
+	// 	giohang[i].addEventListener('click', function(){
+	// 		console.log(this.parentNode.parentNode.parentNode.nextSibling.getElementsByClassName('name_')[0].innerText);
+	// 		CoundGioHang++;
+	// 		updateGioHang();
+	// 	});
+	// }
 
-	function updateGioHang(){
-		numGioHang.innerText = CoundGioHang;
-	}
+	// function updateGioHang(){
+	// 	numGioHang.innerText = CoundGioHang;
+	// }
 });
 
 function loadMilkTea(){
