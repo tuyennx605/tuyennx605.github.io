@@ -453,3 +453,9 @@ ul.nav.navbar-nav {
 		display: block;
 	}
 }
+
+form.navbar-form.navbar-left {
+	width: 99%;
+	margin-right: 0px;
+	margin-left: 0px;
+}
