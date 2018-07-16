@@ -10,7 +10,7 @@ html, body{
 
 
 .content{
-
+  padding: 0px;
 }
 
 .welcome{
@@ -24,11 +24,11 @@ html, body{
 
 }
 
-.welcome_anh1:hover>img{
+.welcome_anh1:hover>a>img{
 	transform: scale(1.2);
 }
 
-.welcome_anh1>img{
+.welcome_anh1>a>img{
 	display: inline;
 	transition: all 1s;
 }
@@ -39,12 +39,13 @@ html, body{
 
 .welcome>h1{
 	padding-top: 45px;
-	text-align: center;
+  text-align: center;
+  font-weight: bold;
 }
 
 .welcome>p{
 	text-align: center;
-	padding-top: 15px;
+	padding: 15px 17px;
 }
 
 /*het welcome*/
@@ -126,13 +127,13 @@ html, body{
     background-position: center top !important;
 }
 
-.parallax1 p, .parallax2 p , .parallax3 p{
+.parallax1>a p, .parallax2>a p , .parallax3>a p{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #fff;
-	font-size: 10vw;
+	font-size: 5vh;
 	font-weight: bold;
 }
 
@@ -157,7 +158,7 @@ html, body{
 	/* width: 90%; */
 	cursor: pointer;
   transition: 0.5s;
-  margin-bottom: 70px;
+  padding: 34px;
 }
 
 .div_anh{
@@ -349,8 +350,10 @@ html, body{
   animation: bounce1 10s linear infinite both;
 }
 
-.parallax1:hover>p, .parallax2:hover>p, .parallax2:hover>p{
-	animation: bounce1 2s linear infinite both;
+.parallax1:hover>a>p, .parallax2:hover>a>p, .parallax3:hover>a>p{
+  animation: bounce1 2s linear infinite both;
+  color: #795548;
+  -webkit-text-stroke: 1px #fff;
 }
 
 
@@ -534,4 +537,19 @@ html, body{
 
 .scroll-flip1.flip1{
 	animation:flip1 1s ease forwards;
+}
+
+
+.carousel-control {
+  display: none;
+  width: 4%;
+  color: #795548;
+}
+
+.carousel-control:focus, .carousel-control:hover {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: .9;
 }

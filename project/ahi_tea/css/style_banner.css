@@ -94,3 +94,34 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+
+
+#wowslider-container1 .ws-title{
+  background: #947d7d6b;
+  
+}
+
+.ws-title span{
+  color: #fff;
+  font-size: 3vw; 
+  font-weight: bold;
+  /* -webkit-text-stroke: 2px #785447; */
+}
+
+
+
+#wowslider-container1 .ws-title div {
+  margin-top: 0.5em;
+  font-size: 1.5vw;
+  color: rgb(221, 218, 218);
+}
+
+.wrap{
+  padding: 0px;
+}
+
+.carousel-control{
+  opacity: 0;
+}

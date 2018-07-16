@@ -125,13 +125,20 @@ function loadMilkTea(){
 									
 									
 						html1+='</div>'+
-								'<div class="content_bot">'+
-									'<i class="fas fa-star"></i>'+
-									'<i class="fas fa-star"></i>'+
-									'<i class="fas fa-star"></i>'+
-									'<i class="fas fa-star"></i>'+
-									'<i class="fas fa-star"></i>'+
-									'<br>'+
+						'<div class="content_bot">';
+						for(k=1; k<=5; k++)
+						{
+							if(k>trasua[i].sao)
+							{
+								html1+='<i class="fas fa-star"></i>';
+							}
+							else
+							{
+								html1+='<i class="fas fa-star" style="color:#FFC107;"></i>';
+							}
+						}
+							
+							html1+='<br>'+
 									'<a href="detail.html"  class="saveObj">'+
 									'<p class="name_">'+trasua[i].name+'</p>'+
 									'</a>';
@@ -184,13 +191,20 @@ html1+='<div class="sale1">'+
 				
 				
 	html1+='</div>'+
-			'<div class="content_bot">'+
-				'<i class="fas fa-star"></i>'+
-				'<i class="fas fa-star"></i>'+
-				'<i class="fas fa-star"></i>'+
-				'<i class="fas fa-star"></i>'+
-				'<i class="fas fa-star"></i>'+
-				'<br>'+
+			'<div class="content_bot">';
+			for(k=1; k<=5; k++)
+			{
+				if(k>cafe[i].sao)
+				{
+					html1+='<i class="fas fa-star"></i>';
+				}
+				else
+				{
+					html1+='<i class="fas fa-star" style="color:#FFC107;"></i>';
+				}
+			}
+				
+				html1+='<br>'+
 				'<a href="detail.html"  class="saveObj">'+
 				'<p class="name_">'+cafe[i].name+'</p>'+
 				'</a>';
@@ -241,13 +255,20 @@ html1+='<div class="sale1">'+
 				
 				
 	html1+='</div>'+
-			'<div class="content_bot">'+
-				'<i class="fas fa-star"></i>'+
-				'<i class="fas fa-star"></i>'+
-				'<i class="fas fa-star"></i>'+
-				'<i class="fas fa-star"></i>'+
-				'<i class="fas fa-star"></i>'+
-				'<br>'+
+			'<div class="content_bot">';
+			for(k=1; k<=5; k++)
+			{
+				if(k>fastfood[i].sao)
+				{
+					html1+='<i class="fas fa-star"></i>';
+				}
+				else
+				{
+					html1+='<i class="fas fa-star" style="color:#FFC107;"></i>';
+				}
+			}
+				
+				html1+='<br>'+
 				'<a href="detail.html"  class="saveObj">'+
 				'<p class="name_">'+fastfood[i].name+'</p>'+
 				'</a>';

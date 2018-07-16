@@ -134,3 +134,6 @@ window.addEventListener('scroll', function(){
 
 
 
+function onclicksanpham(giatri){
+	localStorage.setItem('cacsanpham', JSON.stringify(giatri));
+}
