@@ -3,9 +3,9 @@
 	width: 100%;
 	/*height: 300px;*/
 	background-color: #6d4c41;
-	font-size: 17px;
+	font-size: 15px;
 	color: #fff;
-	padding: 26px 5px;
+	padding: 9px 5px;
 	
 }
 
@@ -62,3 +62,39 @@
     font-size: 2em;
 }
 
+
+
+
+
+#footer .nav-list {
+    font-size: 14px;
+    line-height: 17px;
+}
+#footer .nav-list li {
+    padding: 0 0 11px;
+}
+ul li {
+    list-style-type: none;
+}
+
+#footer a {
+    color: #919294;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.list-unstyled>li:hover>a{
+	color: #919294;
+}
+
+.fa-facebook:hover{
+	color: #3b5998;
+}
+
+.fa-viber:hover{
+	color: #59267c;
+}
+.fa-google-plus-square:hover{
+	color: #dd4b39;
+}

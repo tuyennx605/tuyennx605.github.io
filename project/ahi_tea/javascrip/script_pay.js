@@ -19,12 +19,12 @@ var tongtien1 = 0;
 			updateGioHang();
 
 			console.log(input.parentNode.parentNode.nextSibling.innerText);
-			input.parentNode.parentNode.nextSibling.innerText = (mangPay[i].sl*mangPay[i].giaSizeS);
+			input.parentNode.parentNode.nextSibling.innerText = formatMoney((mangPay[i].sl*mangPay[i].giaSizeS));
 				// console.log(this.previousSibling);
 				// console.log(this.parentNode.nextSibling);
 				
 				tongtien1+=(mangPay[i].giaSizeS*mangPay[i].sl);
-				tongtien.innerText = "Tổng Tiền: "+tongtien1+"đ";
+				tongtien.innerText = "Tổng Tiền: "+formatMoney(tongtien1)+"đ";
 			break;
 		}
 	}
@@ -53,8 +53,8 @@ var tongtien1 = 0;
 	 		tongtien1+=(mangPay[i].giaSizeS*mangPay[i].sl);
 	 		html1+= '<tr>'+
 						'<td class="img1"><img src="'+mangPay[i].urlImage+'"></td>'+
-						'<td class="tensp1">'+mangPay[i].name+'</td>'+
-						'<td class="dongia1">'+mangPay[i].giaSizeS+'</td>'+
+						'<td class="tensp1"><a href="detail.html"  class="saveObj">'+mangPay[i].name+'</a></td>'+
+						'<td class="dongia1">'+formatMoney(mangPay[i].giaSizeS)+'đ</td>'+
 						// '<td class="soluong1">'+
 						// 	'<input type="button" name="tru" value="-" class="tru">'+
 						// 	'<span> '+mangPay[i].sl+' </span>'+
@@ -62,14 +62,14 @@ var tongtien1 = 0;
 						// '</td>'+
 						'<td class="soluong1"><div class="col"><input type="number" class="form1" name="quantity" value="'+mangPay[i].sl+'" min="0" title="Quantity" onchange="clickchange(this)" data-key = "'+mangPay[i].name+'"></div></td>'+
 						// '<div class="col"><input type="number" class="form-control" name="quantity" value="1" min="0" title="Quantity" "></div>'+
-						'<td class="thanhtien1">'+(mangPay[i].sl*mangPay[i].giaSizeS)+'</td>'+
+						'<td class="thanhtien1">'+formatMoney((mangPay[i].sl*mangPay[i].giaSizeS))+'đ</td>'+
 						'<td class="option1">'+
 							'<input type="button" name="xoa" value="Xóa" class="xoa" data-keyxoa = "'+i+'">'+
 						'</td>'+
 					'</tr>';
 	 	}
 	 	tabl.innerHTML = html1;
-	 	tongtien.innerText = "Tổng Tiền: "+tongtien1+"đ";
+	 	tongtien.innerText = "Tổng Tiền: "+formatMoney(tongtien1)+"đ";
  	}
 
  	loadList();
@@ -88,12 +88,12 @@ var tongtien1 = 0;
  			if(mangPay[j].name==this.parentNode.previousSibling.previousSibling.innerText){
  				mangPay[j].sl++;
  				this.previousSibling.innerText = mangPay[j].sl;
- 				this.parentNode.nextSibling.innerText = (mangPay[j].sl*mangPay[j].giaSizeS);
+ 				this.parentNode.nextSibling.innerText = formatMoney((mangPay[j].sl*mangPay[j].giaSizeS));
  				// console.log(this.previousSibling);
  				// console.log(this.parentNode.nextSibling);
  				tongtien1+=mangPay[j].giaSizeS;
 
- 				tongtien.innerText = "Tổng Tiền: "+tongtien1+"đ";
+ 				tongtien.innerText = "Tổng Tiền: "+formatMoney(tongtien1)+"đ";
  				break;
  			}
  		}
@@ -116,7 +116,7 @@ var tongtien1 = 0;
  				// console.log(this.parentNode.nextSibling);
  				tongtien1-=mangPay[j].giaSizeS;
 
- 				tongtien.innerText = "Tổng Tiền: "+tongtien1+"đ";
+ 				tongtien.innerText = "Tổng Tiền: "+formatMoney(tongtien1)+"đ";
  				break;
  			}
  		}
@@ -134,7 +134,7 @@ var tongtien1 = 0;
  			if(mangPay[j].name==this.parentNode.previousSibling.previousSibling.previousSibling.previousSibling.innerText){
 				
  				tongtien1-= (mangPay[j].sl*mangPay[j].giaSizeS);
- 				tongtien.innerText = "Tổng Tiền: "+tongtien1+"đ";
+ 				tongtien.innerText = "Tổng Tiền: "+formatMoney(tongtien1)+"đ";
 				 tabl.removeChild(this.parentNode.parentNode);
 				 mangPay.splice(j, 1);
 				list1.splice(j, 1);

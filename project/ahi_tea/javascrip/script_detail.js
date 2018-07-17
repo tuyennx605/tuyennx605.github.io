@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	img.setAttribute('src', objd.urlImage);
 
 	var gia = document.querySelector('.product_detal>h3');
-	gia.innerText = objd.giaSizeS+" VNĐ";
+	gia.innerText = formatMoney(objd.giaSizeS)+" đ";
 	var caption = document.querySelector('.caption');
 	caption.innerText = objd.mota;
 	
@@ -136,5 +136,42 @@ moreProduct.sort(function(a, b){
 	var spcothebiet = document.getElementById('spcothebiet');
 	spcothebiet.innerHTML = html2;
 
+
+
+
+	var demsl = 1;
+
+	var cong11 = document.getElementById('cong');
+	var tru11 = document.getElementById('tru');
+	var sl11 = document.getElementById('soluong11');
+	var themgiohang = document.getElementById('themgiohang');
+	console.log(tru11);
+
+	cong11.addEventListener('click', function(){
+		demsl++;
+		sl11.innerText = demsl;
+	});
+
+	tru11.addEventListener('click', function(){
+		if(demsl==1)
+			return;
+		demsl--;
+		sl11.innerText = demsl;
+	});
+
+	themgiohang.addEventListener('click', function(){
+		list1 = DB.getData();
+		for(let i=0; i<list1.length; i++){
+			if(list1[i].name == objd.name){
+				alert('Sản Phẩm '+ objd.name + ' đã có trong giỏ hàng!');
+				return;
+			}
+		}
+		list1.push(objd);
+		objd.sl = demsl;
+		updateGioHang();
+		console.log(objd.name);
+		
+	});
 
 });

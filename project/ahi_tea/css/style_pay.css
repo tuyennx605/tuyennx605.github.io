@@ -111,3 +111,12 @@ table, th, td{
     border-radius: 5px;
     padding: 0px 5px;
 }
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: static;
+}
+
+input.xoa:hover {
+    color: #f20;
+    text-decoration: underline;
+}
