@@ -81,7 +81,10 @@ document.addEventListener('DOMContentLoaded', function(){
 	
 	var spcothebiet = document.getElementById('spcothebiet');
 	var banner = document.getElementById('banner1');
-	banner.setAttribute('src', 'img/banner/banner'+product+'.jpg');
+	if(product==-1)
+		banner.setAttribute('src', 'img/banner/banner1.jpg');
+	else
+		banner.setAttribute('src', 'img/banner/banner'+product+'.jpg');
 
 	if(product==2)
 	{
@@ -101,6 +104,18 @@ document.addEventListener('DOMContentLoaded', function(){
 	{
 		for(var i=0; i<trasua.length; i++)
 			data11.push(trasua[i]);
+		for(var i=0; i<6; i++)
+			dataCotheBiet.push(fastfood[i]);
+	}
+	if(product==-1)	//sp khuyen mai
+	{
+		console.log(ALLProduct);
+		for(var i=0; i<ALLProduct.length; i++){
+			if(ALLProduct[i].sale>0)
+			{
+				data11.push(ALLProduct[i]);
+			}
+		}
 		for(var i=0; i<6; i++)
 			dataCotheBiet.push(fastfood[i]);
 	}

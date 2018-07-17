@@ -2,6 +2,7 @@ var CoundGioHang = 0;
 
 
 document.addEventListener('DOMContentLoaded', function(){
+
 	let anim_dilen = document.querySelectorAll('.scroll_mouse_dilen');
 	let anim_LeftToRight = document.querySelectorAll('.scroll-LeftToRight');
 	let anim_RightToLeft = document.querySelectorAll('.scroll-RightToLeft');
