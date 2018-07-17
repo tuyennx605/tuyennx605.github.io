@@ -28,7 +28,7 @@
 }
 
 .footer_row2>*{
-	margin-top: 15px;
+	/* margin-top: 15px; */
 }
 
 .footer_row3>textarea{
@@ -77,13 +77,11 @@ ul li {
     list-style-type: none;
 }
 
-#footer a {
-    color: #919294;
-}
-a {
+.footer a {
     color: #ffffff;
     text-decoration: none;
 }
+
 .list-unstyled>li:hover>a{
 	color: #919294;
 }
@@ -97,4 +95,8 @@ a {
 }
 .fa-google-plus-square:hover{
 	color: #dd4b39;
+}
+
+.tieude11{
+	font-size: 22px;
 }

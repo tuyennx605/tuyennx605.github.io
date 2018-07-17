@@ -41,6 +41,10 @@ html, body{
 	padding-top: 45px;
   text-align: center;
   font-weight: bold;
+  transition: 1s;
+}
+.welcome>h1:hover{
+  transform: scale(1.2);
 }
 
 .welcome>p{
@@ -669,3 +673,4 @@ html, body{
 .custom1>form>.xxx>button{
   padding: 10px 15px;
 }
+

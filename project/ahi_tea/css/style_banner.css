@@ -105,18 +105,18 @@ img {vertical-align: middle;}
 
 .ws-title span{
   color: #fff;
-  font-size: 4vw; 
+  font-size: 4.5vw; 
   font-weight: bold;
-  -webkit-text-stroke: 2px #785447;
+  -webkit-text-stroke: 0.15vw #785447;
 }
 
 
 
 #wowslider-container1 .ws-title div {
   margin-top: 0.5em;
-  font-size: 1.9vw;
+  font-size: 2vw;
   color: rgb(221, 218, 218);
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 0.08vw #fff;
 }
 
 .wrap{

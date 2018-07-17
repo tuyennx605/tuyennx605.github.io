@@ -300,11 +300,12 @@ ul.nav.navbar-nav {
     /* opacity: 0; */
 	transition: all 0.3s linear;
 	z-index: 1000000;
-	padding: 0% 7px;
+	padding: 0% 3px;
 	border-radius: 5px;
 }
 .shopping-cart a {
-    color: #fff;
+	color: #fff;
+	font-size: 25px;
 }
 .shopping-item {
     padding: 0.3em 0.5em;
@@ -395,9 +396,17 @@ ul.nav.navbar-nav {
 	overflow-y: visible!important;
 	display: block!important;
 }
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+    color: #f5d3d3;
+}
 
 
+}
 
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #facccc;
+}
 }
 
 @media (min-width: 1000px){
@@ -452,6 +461,10 @@ ul.nav.navbar-nav {
 		overflow-y: visible;
 		display: block;
 	}
+
+	.navbar-nav .open .dropdown-menu>li>a {
+		color: #f5d3d3;
+	}
 }
 
 form.navbar-form.navbar-left {
@@ -463,4 +476,5 @@ form.navbar-form.navbar-left {
 a {
     font-size: 15px;
 }
+
 

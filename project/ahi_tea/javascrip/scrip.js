@@ -142,10 +142,11 @@ function loadMilkTea(){
 									'<a href="detail.html"  class="saveObj">'+
 									'<p class="name_">'+trasua[i].name+'</p>'+
 									'</a>';
-							if(trasua[i].sale>0)
-									html1+='<p class="gia_">'+'<del>'+formatMoney(trasua[i].giaSizeS)+'</del>  '+ formatMoney((trasua[i].giaSizeS-trasua[i].giaSizeS*trasua[i].sale/100)) +'đ</p>';
-							else
-									html1+='<p class="gia_">'+formatMoney(trasua[i].giaSizeS)+'đ</p>';
+							// if(trasua[i].sale>0)
+							// 		html1+='<p class="gia_">'+'<del>'+formatMoney(trasua[i].giaSizeS)+'</del>  '+ formatMoney((trasua[i].giaSizeS-trasua[i].giaSizeS*trasua[i].sale/100)) +'đ</p>';
+							// else
+							// 		html1+='<p class="gia_">'+formatMoney(trasua[i].giaSizeS)+'đ</p>';
+							html1+='<p class="gia_">'+ formatMoney((trasua[i].giaSizeS-trasua[i].giaSizeS*trasua[i].sale/100)) +'đ</p>';
 								html1+='</div>'+
 							'</div>';
 
@@ -208,10 +209,11 @@ html1+='<div class="sale1">'+
 				'<a href="detail.html"  class="saveObj">'+
 				'<p class="name_">'+cafe[i].name+'</p>'+
 				'</a>';
-		if(cafe[i].sale>0)
-				html1+='<p class="gia_">'+'<del>'+formatMoney(cafe[i].giaSizeS)+'</del>  '+formatMoney((cafe[i].giaSizeS-cafe[i].giaSizeS*cafe[i].sale/100))+'Đ</p>';
-		else
-				html1+='<p class="gia_">'+formatMoney(cafe[i].giaSizeS)+'Đ</p>';
+		// if(cafe[i].sale>0)
+		// 		html1+='<p class="gia_">'+'<del>'+formatMoney(cafe[i].giaSizeS)+'</del>  '+formatMoney((cafe[i].giaSizeS-cafe[i].giaSizeS*cafe[i].sale/100))+'Đ</p>';
+		// else
+		// 		html1+='<p class="gia_">'+formatMoney(cafe[i].giaSizeS)+'Đ</p>';
+		html1+='<p class="gia_">'+formatMoney((cafe[i].giaSizeS-cafe[i].giaSizeS*cafe[i].sale/100))+'đ</p>';
 			html1+='</div>'+
 		'</div>';
 
@@ -272,10 +274,11 @@ html1+='<div class="sale1">'+
 				'<a href="detail.html"  class="saveObj">'+
 				'<p class="name_">'+fastfood[i].name+'</p>'+
 				'</a>';
-		if(fastfood[i].sale>0)
-				html1+='<p class="gia_">'+'<del>'+formatMoney(fastfood[i].giaSizeS)+'</del>  '+formatMoney((fastfood[i].giaSizeS-fastfood[i].giaSizeS*fastfood[i].sale/100))+'đ</p>';
-		else
-				html1+='<p class="gia_">'+formatMoney(fastfood[i].giaSizeS)+'đ</p>';
+		// if(fastfood[i].sale>0)
+		// 		html1+='<p class="gia_">'+'<del>'+formatMoney(fastfood[i].giaSizeS)+'</del>  '+formatMoney((fastfood[i].giaSizeS-fastfood[i].giaSizeS*fastfood[i].sale/100))+'đ</p>';
+		// else
+		// 		html1+='<p class="gia_">'+formatMoney(fastfood[i].giaSizeS)+'đ</p>';
+		html1+='<p class="gia_">'+'<del>' +formatMoney((fastfood[i].giaSizeS-fastfood[i].giaSizeS*fastfood[i].sale/100))+'đ</p>';
 			html1+='</div>'+
 		'</div>';
 
