@@ -78,7 +78,7 @@ for(var i=1; i<=12; i++){
 		new obj(
 			i,
 			2,
-			'Caffee loai '+i,
+			'Coffee loai '+i,
 			'img/product/cafe/c'+i+'.png',
 			so,
 			so+5000,
@@ -94,7 +94,7 @@ for(var i=1; i<=12; i++){
 		new obj(
 			i,
 			2,
-			'Caffee loai'+i,
+			'Coffee loai'+i,
 			'img/product/cafe/c'+i+'.png',
 			so,
 			so+5000,

@@ -278,7 +278,7 @@ html1+='<div class="sale1">'+
 		// 		html1+='<p class="gia_">'+'<del>'+formatMoney(fastfood[i].giaSizeS)+'</del>  '+formatMoney((fastfood[i].giaSizeS-fastfood[i].giaSizeS*fastfood[i].sale/100))+'đ</p>';
 		// else
 		// 		html1+='<p class="gia_">'+formatMoney(fastfood[i].giaSizeS)+'đ</p>';
-		html1+='<p class="gia_">'+'<del>' +formatMoney((fastfood[i].giaSizeS-fastfood[i].giaSizeS*fastfood[i].sale/100))+'đ</p>';
+		html1+='<p class="gia_">'+formatMoney((fastfood[i].giaSizeS-fastfood[i].giaSizeS*fastfood[i].sale/100))+'đ</p>';
 			html1+='</div>'+
 		'</div>';
 
