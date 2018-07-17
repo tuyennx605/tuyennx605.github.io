@@ -30,6 +30,10 @@ function obj (id, loai, name, urlImage, giaSizeS, giaSizeM, giaSizeL, sale, mota
 // 		)
 // 	);
 
+function pad(d) {
+    return (d < 10) ? '0' + d.toString() : d.toString();
+}
+
 for(var i=1; i<=20; i++){
 	var so = Math.floor((Math.random() * 20) + 10)*1000;
 	if(i%7!=0)
@@ -38,7 +42,7 @@ for(var i=1; i<=20; i++){
 		new obj(
 			i,
 			1,
-			'Trà sữa loai '+i,
+			'Trà sữa loai '+pad(i),
 			'img/product/tea/ts'+i+'.png',
 			so,
 			so+5000,
@@ -54,7 +58,7 @@ for(var i=1; i<=20; i++){
 		new obj(
 			i,
 			1,
-			'Trà sữa loai '+i,
+			'Trà sữa loai '+pad(i),
 			'img/product/tea/ts'+i+'.png',
 			so,
 			so+5000,
@@ -78,7 +82,7 @@ for(var i=1; i<=12; i++){
 		new obj(
 			i,
 			2,
-			'Coffee loai '+i,
+			'Coffee loai 0'+pad(i),
 			'img/product/cafe/c'+i+'.png',
 			so,
 			so+5000,
@@ -94,7 +98,7 @@ for(var i=1; i<=12; i++){
 		new obj(
 			i,
 			2,
-			'Coffee loai'+i,
+			'Coffee loai 0'+pad(i),
 			'img/product/cafe/c'+i+'.png',
 			so,
 			so+5000,
@@ -117,7 +121,7 @@ for(var i=1; i<=16; i++){
 		new obj(
 			i,
 			3,
-			'Fastfood loai '+i,
+			'Fastfood loai'+pad(i),
 			'img/product/fastfood/f'+i+'.png',
 			so,
 			so+5000,
@@ -133,7 +137,7 @@ for(var i=1; i<=16; i++){
 		new obj(
 			i,
 			3,
-			'Fastfood loai'+i,
+			'Fastfood loai'+pad(i),
 			'img/product/fastfood/f'+i+'.png',
 			so,
 			so+5000,

@@ -109,7 +109,7 @@ table, th, td{
 	text-align: center;
 	border: 1px solid gray;
     border-radius: 5px;
-    padding: 0px 5px;
+    padding: 5px 5px;
 }
 
 .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
@@ -119,4 +119,9 @@ table, th, td{
 input.xoa:hover {
     color: #f20;
     text-decoration: underline;
+}
+
+button, input, select, textarea {
+
+	line-height: normal;
 }

@@ -37,6 +37,10 @@ var tongtien1 = 0;
 
 
  document.addEventListener('DOMContentLoaded', function(){
+
+	
+
+
  	var tabl = document.getElementById('tabl');
  	var tongtien = document.getElementById('tongtien');
 	
@@ -146,5 +150,20 @@ var tongtien1 = 0;
  		}
  		
  	});
- 	}
+	 }
+	 
+
+
+
+
+	 var saveObj = document.getElementsByClassName('saveObj');
+	console.log(saveObj);
+
+	for(var i=0; i<saveObj.length; i++){
+		saveObj[i].addEventListener('click', function(){
+			// this.querySelector('p');
+			console.log(this.innerText);
+			localStorage.setItem('detail', JSON.stringify(this.innerText));
+		});
+	}
  });

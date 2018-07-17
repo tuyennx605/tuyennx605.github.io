@@ -15,7 +15,7 @@ function getdata(){
 		}
 }
 var nameDetail = getdata();
-// console.log(nameDetail);
+console.log(nameDetail);
 
 document.addEventListener('DOMContentLoaded', function(){
 	var objd;
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		}
 	}
-	console.log(moreProduct);
+	// console.log(moreProduct);
 	var name = document.querySelector('.content>h1');
 	name.innerText = objd.name;
 
@@ -126,10 +126,11 @@ moreProduct.sort(function(a, b){
 										'<a href="detail.html"  class="saveObj">'+
 										'<p class="name_">'+moreProduct[i].name+'</p>'+
 										'</a>';
-								if(moreProduct[i].sale>0)
-										html2+='<p class="gia_">'+'<del>'+moreProduct[i].giaSizeS+'</del>  '+(moreProduct[i].giaSizeS-moreProduct[i].giaSizeS*moreProduct[i].sale/100)+'Đ</p>';
-								else
-										html2+='<p class="gia_">'+moreProduct[i].giaSizeS+'Đ</p>';
+								// if(moreProduct[i].sale>0)
+								// 		html2+='<p class="gia_">'+'<del>'+moreProduct[i].giaSizeS+'</del>  '+(moreProduct[i].giaSizeS-moreProduct[i].giaSizeS*moreProduct[i].sale/100)+'Đ</p>';
+								// else
+								// 		html2+='<p class="gia_">'+moreProduct[i].giaSizeS+'Đ</p>';
+								html2+='<p class="gia_">'+(moreProduct[i].giaSizeS-moreProduct[i].giaSizeS*moreProduct[i].sale/100)+'Đ</p>';
 									html2+='</div>'+
 								'</div>';
 	}

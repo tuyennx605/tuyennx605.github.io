@@ -1,4 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(){
 // 	console.log("ok");
 
 	// //khai bao
@@ -96,7 +96,13 @@
 
 
 
+	var tam = document.getElementsByClassName('ws-title');
 
+	for(var i=0; i<tam.length; i++){
+		tam[i].addEventListener('click', function(){
+			console.log(this.querySelector('span').innerText);
+			document.location.href = 'product.html';
+		});
+	}
 
-
-// });
+});

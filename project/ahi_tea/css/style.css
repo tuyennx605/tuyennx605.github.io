@@ -612,14 +612,14 @@ html, body{
  margin-top: 3em;
 }
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .review > .container > .row > .text-center > .title {
   color: white;
-  margin-bottom: 5%;
-  margin-top: 4%;
+  margin-bottom: 0%;
+    margin-top: 7%;
 }
 
 .title {
@@ -653,13 +653,20 @@ html, body{
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-top: 5px;
+  
 }
 .review-content {
   color: white;
 }
 
+.carousel-inner>.item{
+  padding: 10px 0px;
+}
+
+
 .carousel-inner>.item.active{
-  background: #0000008f
+  background: #0000005e
 }
 
 .custom1{

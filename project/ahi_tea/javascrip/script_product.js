@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function(){
 								// 		html2+='<p class="gia_">'+'<del>'+dataCotheBiet[i].giaSizeS+'</del>  '+(dataCotheBiet[i].giaSizeS-dataCotheBiet[i].giaSizeS*dataCotheBiet[i].sale/100)+'Đ</p>';
 								// else
 								// 		html2+='<br><p class="gia_">'+dataCotheBiet[i].giaSizeS+'Đ</p>';
-								html2+='<p class="gia_">'+formatMoney((dataCotheBiet[i].giaSizeS-dataCotheBiet[i].giaSizeS*dataCotheBiet[i].sale/100))+'Đ</p>';
+								html2+='<p class="gia_">'+formatMoney((dataCotheBiet[i].giaSizeS-dataCotheBiet[i].giaSizeS*dataCotheBiet[i].sale/100))+'đ</p>';
 									html2+='</div>'+
 								'</div>';
 	}
