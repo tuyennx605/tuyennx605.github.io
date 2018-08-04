@@ -15,7 +15,7 @@ $(document).ready(()=>{
     // .then(stream=>playStream('localstream', stream));
 
 
-    var peer = new Peer();  //co id thi cho vao (id nay phai la khac nguoi khac nhe), ko thi no lay ngau nhien
+    var peer = new Peer({port: 443, secure: true});  //co id thi cho vao (id nay phai la khac nguoi khac nhe), ko thi no lay ngau nhien
     peer.on('open', id=>$('#mypeer').append(id));
 
 //cau hinh nguoi goi:
